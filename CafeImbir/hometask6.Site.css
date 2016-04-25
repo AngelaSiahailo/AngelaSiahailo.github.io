@@ -1,0 +1,127 @@
+﻿			body {
+				background-image:url(http://cafeimbir.com/6/templates/gk_coffe/images/style1/main_bg.jpg)
+			}
+			div.main {
+				width:1000px;
+				margin: auto;
+			}
+			div.imbirLogo {
+				background-image: url(images/imbirLogo.jpg);
+				height: 130px;
+			}
+			div.topmenu {
+				height:45px;
+			}
+			div.menu {
+				width:11%;
+				height:25px;
+				color: #585048;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 20px;
+				text-align: center;
+				float: left;
+				padding:10px 0px 0px 0px;
+			}
+			#welcomeRestTogether {
+				width:44%;
+				height:319px;
+				float:left;
+				text-align: center;
+			}
+			#welcomeImage {
+				height:160px;
+				padding: 10px;
+				float:left;
+				background-image: url(http://cafeimbir.com/6/templates/gk_coffe/images/style1/dark_bg.png);
+
+			}
+			#welcome {
+				border:1px dashed #B5AE9C;
+				padding: 12px;
+			}
+			#comeAndRestDiv {
+				width:100%;
+				height:143px;
+				float:left;
+			}
+			#textComeHere {
+				color: #585048; 
+				font-family: Arial, Helvetica, sans-serif; 
+				font-style: italic; 
+				font-weight: bold; 
+				font-size: 14px; 
+				margin:0px;
+				padding:0px 0px 5px 0px;
+				text-align:center;
+				width:100%;
+			}
+			#shop {
+				width:53.5%;
+				height:300px;
+				background-color: white;
+				float:left;
+				padding:12px;
+				text-align:center;
+			}
+			#textShop {
+				color: #585048;  
+				font-size:16px;
+				margin:0px;
+				width:100%;
+			}
+			#emptyDiv {
+				width:100%;
+				height:20px;
+				float:left;
+			}
+			div.menubottom {
+				color: #585048;
+				background-color: #CCC6BA;
+				text-align:center;
+				float:left;
+				margin:2px;
+				padding:15px;
+				border:1px solid #BFB9AA;
+			}
+			#novostiDiv {
+				background-image: url(http://cafeimbir.com/6/templates/gk_coffe/images/style1/dark_bg.png);
+				float:left;
+				width:100%;
+			}
+			.novostiImages {
+				float:left;
+				border:5px solid white;
+				margin:40px 0px 10px 20px;
+			}
+			div.menuBottomItem {
+				float:left;
+				width:24.5%;
+			}
+			h5 {
+				color: white;
+				text-align: left;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 12px;
+				margin-left:20px;
+			}
+			p {
+				color: #DCD5C6;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 13px;
+				letter-spacing: 0.5px;
+				margin-left:20px;
+				width:220px;
+				height:60px;
+			}
+			p.bulletChitat {
+				width:50px;
+				height:10px;
+				color: #585048;
+				background-color: #DCD7C5;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 11px;
+				font-weight: bold;
+				padding:8px;
+				border-radius: 5px;
+				text-align:center;
+			}

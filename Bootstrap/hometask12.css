@@ -1,0 +1,101 @@
+﻿body{
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	line-height:1.75em;
+	color:#666;
+}
+	.container-fluid{padding:0px;}
+		.margin-bottom{margin-bottom:40px}
+			.margin-bottom>p, .section-title, .aside-title, .media-heading{font-family:"Lato", "Open Sans", sans-serif}
+			.primary-color{color:#0099DA}
+			.lead-lg, .section-title{
+				font-size:1.8em;
+				font-weight:100;
+			}
+				.lead-lg>strong{font-weight:400}
+			.section-title{
+				color:#0099da;
+				line-height:120%;
+				margin:0 0 17px 0;
+			}
+				i{margin-right:10px;}
+.panel-heading{padding:5px 15px}
+.panel-heading a{color:#333;text-decoration:none;}
+.panel-heading a:hover{text-decoration:none}
+.panel-heading-link a.collapsed::after{content:"\f104"}
+.panel-heading-link a::after{
+	font-family:'FontAwesome';
+	content:"\f107";
+	font-size:1.2em;
+	float:right;
+	background-color:#0099da;
+	color:#fff;
+	padding:5px 0;
+	margin-top:-5px;
+	margin-right:-15px;
+	width:33px;
+	text-align:center;
+}
+
+
+		aside{
+			background-color:#444;
+			color:#eee;
+			padding:0 0 20px 0;
+			margin-top:30px;
+			border-top:solid 1px #CCC;
+			box-shadow:0px 0px 1px rgba(0, 0, 0, 0.3);
+		}
+			.aside-title{
+				color:#0EB7FF;
+				font-size:1.6em;
+				font-weight:100;
+			}
+				.three-cols{
+					margin-bottom:10px;
+					overflow:hidden;
+				}
+					.three-cols>li{
+						float:left;
+						width:33.33%;
+						padding-top:1px;
+						padding-bottom:2px;
+					}
+			aside a{
+				color:#EEE;
+				text-decoration:none;
+				transition: all 0.25s ease;
+			}
+			aside a:hover{color:#0EB7FF;text-decoration:none;}
+					.btn{
+						color:#eee;
+						border:1px solid #0087C1;
+						background:linear-gradient(to bottom, #0099da 5%, #0087c1 100%)
+					}
+					.btn:hover{border-color:#0087C1}
+						.media-object{
+							width:75px;
+							height:75px;
+						}
+					.media-heading{
+						font-size:1.1em;
+						line-height:1.3em;
+						font-weight:100;
+					}
+					small{
+						font-style:italic;
+						font-size:80%;
+					}
+					.thumbnail{
+						border-color:#666;
+						background-color:rgba(0,0,0,0.2);
+						border-radius:0;
+					}
+			footer{
+				background-color:#333;
+				padding:17px 0;
+				border-top:solid 1px #555;
+				color:#ccc;
+			}
+				footer a{color:#0099DA}
+				footer a:hover{text-decoration:none}

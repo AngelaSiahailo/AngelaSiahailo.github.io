@@ -1,0 +1,265 @@
+﻿
+/* MAIN-CONTAINER/ DIV1 */
+#first-inside-main-container {
+	background:url(images/fon1.jpeg) no-repeat;
+	background-size:100%;
+	width:100%;
+	height:350px;
+	color:white;
+	font-family:Arial Verdana sans-serif;
+	text-align:left;
+}
+#first-inside-div1 {
+	height:50%;
+	width:35%;
+	position:relative;
+	top:100px;
+	margin:0px 20px;
+}
+#text-italic-div1 {
+	font-style:italic;
+	width:90%;
+	height:30%;
+	font-size:14px;
+	margin:20px 0px;
+}
+#text-normal-div1 {
+	width:90%;
+	height:25%;
+}
+p.text-normal-middle {
+	font-size:16px;
+	margin:5px 0px;
+}
+#text-button-div1 {
+	width:26%;
+	height:20%;
+}
+p.text-button {
+	word-spacing: 1px;
+	padding:5px 15px;
+	border:1px solid white;
+	border-radius:4px;
+	text-transform: uppercase;
+	font-size:12px;
+	margin:5px 0px;
+}
+/*MAIN-CONTAINER/DIV2*/
+#second-inside-main-container {
+	width:100%;
+	height:180px;
+	background-color:black;
+}
+#second-inside-div1 {
+	width:30%;
+	height:100%;
+	background-image:url(images/fon2.png);
+	background-size:100%;
+	float:left;
+}
+#second-inside-div1-image {
+	position:relative;
+	top:70px;
+	left:20px;
+	width:70%;
+}
+#second-inside-div2 {
+	width:50%;
+	height:70%;
+	float:left;
+	color:white;
+	font-family:Arial Verdana sans-serif;
+	text-align:left;
+	margin:10px 40px;
+	position:relative;
+	top:25px;
+}
+.text-normal-big {
+	font-size:26px;
+	letter-spacing: 0px;
+	margin:5px 0px;
+}
+#joy-to-our-members {
+	width:50%;
+	height:30%;
+}
+#enjoy-exclusive-offers {
+	width:90%;
+	height:25%;
+}
+#text-button-div2 {
+	width:40%;
+	height:20%;
+}
+.buttons-div2 {
+	float:left;
+	margin:0px 20px 0px 0px;
+	width:36%;
+	text-align:center;
+}
+#button-join-now {
+	color:black;
+	background-color:#E3C383;
+	border-color: #E3C383;
+}
+/*MAIN-CONTAINER/DIV3/BLOCK1*/
+#third-and-forth-inside-main-container {
+	background-color:black;
+	width:100%;
+	height:600px;
+}
+.third-inside-div {
+	width:100%;
+	height:290px;
+}
+.third-inside-line1 {
+	width:45%;
+	height:100%;
+	float:left;
+	position:relative;
+	top:30px;
+}
+.third-inside-column1 {
+	left:50px;
+	color:white;
+}
+#image-gift {
+	height:100%;
+	text-align:center;
+}
+.third-inside-column2 {
+	left:70px;
+	color:white;
+}
+.third-text-div {
+	position:relative;
+	top:120px;
+}
+.give-the-gift {
+	width:80%;
+}
+.each-month {
+	width:90%;
+}
+.gift-a-sub {
+	width:50%;
+	height:15%;
+}
+.image {
+	text-align:center;
+}
+/*MAIN-CONTAINER/DIV4*/
+#play {
+	height:70%;
+}
+#christmas {
+	width:80%;
+}
+.underline {
+	text-decoration: underline;
+}
+/*MAIN-CONTAINER/DIV5*/
+
+#fifth-inside-main-container {
+	background-color:white;
+	width:100%;
+	height:180px;
+}
+#fifth-inside-div1 {
+	width:20%;
+	height:80%;
+	float:left;
+	position:relative;
+	top:10px;
+	left:50px;
+	text-align:center;
+}
+#phones {
+	height:144px;
+}
+#fifth-inside-div2 {
+	position:relative;
+	top:40px;
+	left:50px;
+	width:70%;
+	height:20%;
+	font-family:Arial Verdana sans-serif;
+	font-size:26px;
+	font-style:italic;
+	letter-spacing: 1px;
+	color:#3D3935;
+}
+.fifth-inside-div34 {
+	position:relative;
+	float:left;
+	width:15%;
+	height:25%;
+	top:50px;
+	left:60px;
+}
+.size {
+	width:70%;
+}
+/*MAIN-CONTAINER/DIV6*/
+
+#sixth-inside-main-container {
+	background-color:#F0F0F0;
+	width:100%;
+	height:60px;
+	border:1px solid white;
+}
+#sixth-inside-div1 {
+	width:30%;
+	height:30px;
+	margin:10px 0px 0px 0px;
+	float:left;
+}
+.logo-images {
+	height:90%;
+	float:left;
+	margin:5px 0px 5px 30px;
+}
+.logo-size {
+	height:20px;
+}
+#sixth-inside-div2 {
+	width:50%;
+	height:100%;
+	float:right;
+}
+#box1 {
+	width:115px;
+	float:left;
+	background-color:#F0F0F0;
+	margin:8px 12px;
+}
+#box2 {
+	width:300px;
+	float:left;
+	background-color:#F0F0F0;
+	margin:8px 12px;
+}
+#box3 {
+	width:120px;
+	float:left;
+	text-align:center;
+	margin:10px 12px;
+}
+.text-in-box1 {
+	font-size:14px;
+	color:#3D3935;
+}
+#text-in-box2 {
+	color:#E0E0E0;
+	border:1px solid #E0E0E0;
+	border-radius:4px;
+}
+#text-in-box3 {
+	background-color:#3D3935;
+	font-weight:bold;
+	font-size:12px;
+	color:white;
+	border:1px solid #402B2E;
+	border-radius:4px;
+	font-family:Arial Verdana sans-serif;
+}

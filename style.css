@@ -1,1 +1,31 @@
-﻿
+﻿body{
+	margin:0;
+	font-family: 'Architects Daughter';
+	font-size:18px;
+	font-weight:bold;
+}
+.padding{padding-top:20px;}
+.bg-black{background-color:#222}
+.navbar-inverse{border:none}
+
+.bg-white{background-color:white}
+.img-circle{
+	border:3px solid #E8DFDF;
+	-webkit-filter: grayscale(60%);
+  	-moz-filter: grayscale(100%);
+  	-ms-filter: grayscale(100%);
+  	-o-filter: grayscale(100%);
+  	filter: grayscale(100%);
+  	filter: url(grayscale.svg#greyscale); /* Firefox 4+ */
+  	filter: gray; /* IE 6-9 */
+  	background-color:#C9E5E8;
+}
+.img-circle:hover{
+	-webkit-filter: grayscale(0%);
+  	-moz-filter: grayscale(0%);
+  	-ms-filter: grayscale(0%);
+  	-o-filter: grayscale(0%);
+  	filter: none;
+  	border:2px solid #E8DFDF;
+}
+
