@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Us</title>
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href="maincss.css" rel="stylesheet">
+	<SCRIPT type="text/javascript">
+
+		<!--
+
+		function validate_form ( )
+		{
+			valid = true;
+
+			if ( document.contact_form.contact_name.value == "" )
+			{
+				alert ( "Пожалуйста, введите данные в поле 'Ваше имя'." );
+				valid = false;
+			}
+
+			if ( ( document.contact_form.gender[0].checked == false ) && ( document.contact_form.gender[1].checked == false ) )
+			{
+				alert ( "Пожалуйста, выберите Ваш пол: Мужской или Женский" );
+				valid = false;
+			}
+
+			if ( document.contact_form.age.selectedIndex == 0 )
+			{
+				alert ( "Пожалуйста, выберите Ваш возраст." );
+				valid = false;
+			}
+
+			if ( document.contact_form.terms.checked == false )
+			{
+				alert ( "Пожалуйста, отметь согласие с Соглашением." );
+				valid = false;
+			}
+
+
+
+			return valid;
+		}
+
+//-->
+
+</SCRIPT>
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo-block">
+				<a href="index.html">
+					<h1>Kidz Arts & <br/><br/>
+						Crafts Studios</h1>
+					</a>
+				</div>
+				<div class="menu_block float-right">
+					<nav>
+						<ul class="menu">
+							<li class="not-current float-left"><a href="index.html">Home</a></li>
+							<li class="float-left not-current"><a href=".html">About Us</a></li>
+							<li class="float-left not-current"><a href=".html">Products</a></li>
+							<li class="float-left current"><a href="contactUs.html">Contact Us</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<div class="content">
+			<div class="container">
+				<div class="grid_12">
+					<h2>Find Us</h2>
+					<div class="map">
+						<figure>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48394.95968541861!2d-73.90551942288324!3d40.702935079332796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25e743b5f5de9%3A0x62f54981e38d97ad!2s79-05+Myrtle+Ave%2C+Queens%2C+NY+11385%2C+USA!5e0!3m2!1sen!2sua!4v1462903439651"></iframe>
+						</figure>
+						<div class="contact-info alpha">
+							<h2>Address:</h2>
+							<address>
+								<span class="fa fa-home"></span>
+								79-05 Myrtle Avenue <br>
+								Glendale <br>
+								NY 11385
+							</address>
+						</div>
+						<div class="contact-info beta">
+							<h2>Phone:</h2>
+							<div class="m_phone">
+								<div class="fa fa-phone"></div>
+								(718) 381-3334
+							</div>							
+						</div>
+						<div class="contact-info omega">
+							<h2>Email:</h2>
+							<a href="#"><span class="fa fa-envelope-o"></span> kidzartsandcrafts@gmail.com</a>
+						</div>	
+					</div>
+					<h2>Contact Form</h2>
+					<form name="contact_form" method="post" action="#" onsubmit="return validate_form ( );">
+						<p>Your name: 
+							<input type="text" name="contact_name">
+						</p>
+
+						<p>Select your gender: 
+							<input type="radio" name="gender" value="Male"> Male
+							<input type="radio" name="gender" value="Female"> Female
+						</p>
+						<p>Choose your Age:
+							<select name="age">
+								<option value="">None</option>
+								<option value="0-18 years">0-18 years</option>
+								<option value="18-30 years">18-30 years</option>
+								<option value="30-45 years">30-45 years</option>
+								<option value="45-60 years">45-60 years</option>
+								<option value="60+ years">60+ years</option>
+							</select>
+						</p>
+						<input type="checkbox" name="terms" value="Yes">I Agree with the terms and conditions
+						<p><input type="submit" name="send" value="Submit"></p>
+					</form>
+				</div>					
+			</div>
+		</div>
+	</body>
+</html>
