@@ -6,8 +6,9 @@
 	<link rel="icon" href="images/favicon.ico">
 	<link rel="shortcut icon" href="images/favicon.ico" />
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<script src="js/jquery.js"></script>
 	<link href="maincss.css" rel="stylesheet">
-	<SCRIPT type="text/javascript">
+	<script type="text/javascript">
 
 		<!--
 
@@ -17,13 +18,13 @@
 
 			if ( document.contact_form.contact_name.value == "" )
 			{
-				alert ( "Пожалуйста, введите данные в поле 'Ваше имя'." );
+				$('[name="contact_name"]').parent().siblings().last().show(); /*( "Пожалуйста, введите данные в поле 'Ваше имя'." )*/
 				valid = false;
 			}
 
 			if ( ( document.contact_form.gender[0].checked == false ) && ( document.contact_form.gender[1].checked == false ) )
 			{
-				alert ( "Пожалуйста, выберите Ваш пол: Мужской или Женский" );
+				$('[name="gender"]').parent().siblings().last().show();
 				valid = false;
 			}
 
@@ -38,9 +39,6 @@
 				alert ( "Пожалуйста, отметь согласие с Соглашением." );
 				valid = false;
 			}
-
-
-
 			return valid;
 		}
 
@@ -101,53 +99,51 @@
 					</div>
 					<h2>Contact Form</h2>
 					<form name="contact_form" method="post" action="#" onsubmit="return validate_form ( );">
-					<table>
-					<tr>
-					<td>
-						Your name: </td>
-						<td>
-							<input type="text" name="contact_name">
-							</td>
-							<td></td>
+						<table>
+							<tr>
+								<td>
+									Your name: </td>
+									<td>
+										<input type="text" name="contact_name">
+									</td>
+									<td class="error">Пожалуйста, введите данные в поле 'Ваше имя'</td>
 							</tr>
 							<tr>
-							<td>
-						
-
-						Select your gender: </td>
-						<td>
-							<input type="radio" name="gender" value="Male"> Male
-							<input type="radio" name="gender" value="Female"> Female
-						</td>
-						<td></td>
-						</tr>
-						<tr>
-						<td>
-						Choose your Age:</td>
-						<td>
-							<select name="age">
-								<option value="">None</option>
-								<option value="0-18 years">0-18 years</option>
-								<option value="18-30 years">18-30 years</option>
-								<option value="30-45 years">30-45 years</option>
-								<option value="45-60 years">45-60 years</option>
-								<option value="60+ years">60+ years</option>
-							</select>
-						</td>
-						<td></td>
-						</tr>
-						<tr>
-						<td colspan="2">
-						<input type="checkbox" name="terms" value="Yes">I Agree with the terms and conditions
-						</td>
-						<td>
-						</td>
-						</tr>
-						</table>
-						<p><input type="submit" name="send" value="Submit"></p>
-					</form>
-				</div>					
-			</div>
-		</div>
-	</body>
-</html>
+									<td>
+									Select your gender: </td>
+										<td>
+											<input type="radio" name="gender" value="Male"> Male
+											<input type="radio" name="gender" value="Female"> Female
+										</td>
+										<td class="error">vckhhchhf</td>
+									</tr>
+									<tr>
+										<td>
+											Choose your Age:</td>
+											<td>
+												<select name="age">
+													<option value="">None</option>
+													<option value="0-18 years">0-18 years</option>
+													<option value="18-30 years">18-30 years</option>
+													<option value="30-45 years">30-45 years</option>
+													<option value="45-60 years">45-60 years</option>
+													<option value="60+ years">60+ years</option>
+												</select>
+											</td>
+											<td class="error"></td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<input type="checkbox" name="terms" value="Yes">I Agree with the terms and conditions
+											</td>
+											<td class="error">
+											</td>
+										</tr>
+									</table>
+									<p><input type="submit" name="send" value="Submit"></p>
+								</form>
+							</div>					
+						</div>
+					</div>
+				</body>
+				</html>
