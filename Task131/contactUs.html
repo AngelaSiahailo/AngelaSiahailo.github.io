@@ -101,15 +101,30 @@
 					</div>
 					<h2>Contact Form</h2>
 					<form name="contact_form" method="post" action="#" onsubmit="return validate_form ( );">
-						<p>Your name: 
+					<table>
+					<tr>
+					<td>
+						Your name: </td>
+						<td>
 							<input type="text" name="contact_name">
-						</p>
+							</td>
+							<td></td>
+							</tr>
+							<tr>
+							<td>
+						
 
-						<p>Select your gender: 
+						Select your gender: </td>
+						<td>
 							<input type="radio" name="gender" value="Male"> Male
 							<input type="radio" name="gender" value="Female"> Female
-						</p>
-						<p>Choose your Age:
+						</td>
+						<td></td>
+						</tr>
+						<tr>
+						<td>
+						Choose your Age:</td>
+						<td>
 							<select name="age">
 								<option value="">None</option>
 								<option value="0-18 years">0-18 years</option>
@@ -118,8 +133,17 @@
 								<option value="45-60 years">45-60 years</option>
 								<option value="60+ years">60+ years</option>
 							</select>
-						</p>
+						</td>
+						<td></td>
+						</tr>
+						<tr>
+						<td colspan="2">
 						<input type="checkbox" name="terms" value="Yes">I Agree with the terms and conditions
+						</td>
+						<td>
+						</td>
+						</tr>
+						</table>
 						<p><input type="submit" name="send" value="Submit"></p>
 					</form>
 				</div>					
