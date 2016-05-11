@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kidz Arts&Crafts Studios</title>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href="maincss.css" rel="stylesheet">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-migrate-1.2.1.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div>
+				<a href="index.html">
+					<h1>Kidz Arts & <br/><br/>
+						Crafts Studios</h1>
+					</a>
+				</div>
+				<div class="menu_block float-right">
+					<nav>
+						<ul class="menu">
+							<li class="current float-left"><a href="index.html">Home</a></li>
+							<li class="float-left not-current"><a href=".html">About Us</a></li>
+							<li class="float-left not-current"><a href=".html">Products</a></li>
+							<li class="float-left not-current"><a href="contactUs.html">Contact Us</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="container">
+				<div class="float-left maindiv-size">
+					<img class="homepage-img" src="images/homepage.jpg" alt="Home Page Image">
+				</div>
+				<div class="logo-text float-right">
+					<h2>Get Creative!
+					</h2>
+					<p class="logo-text-style">
+						It’s a space for both children and adults, Kidz Arts & Crafts is a place to spend time with friends and family, while learning about artistic possibilities and expressing your creativity. Explore paint-your-own-pottery and more. Kidz offers open studio hours, parties, and all kinds of fun workshops.
+					</p>
+				</div>				
+			</div>
+		</section>
+		<div class="container">
+			<h2>Upcoming Classes</h2>
+			<section>
+				<ul id="da-thumbs" class="da-thumbs">
+					<li>
+						<a href="#">
+							<img src="images/1.jpg" alt="">
+							<div><span>Kids Art Safari</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/2.jpg" alt="">
+							<div><span>Kids Pottery Workshop</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/3.jpg" alt="">
+							<div><span>Wearable Design</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/4.jpg" alt="">
+							<div><span>Kids Sculpture & Pottery</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/5.jpg" alt="">
+							<div><span>Kids Cartooning</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/6.jpg" alt="">
+							<div><span>Kids Arts n Crafts</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/7.jpg" alt="">
+							<div><span>Kids Palette-Palate</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/8.jpg" alt="">
+							<div><span>Kidville Pajama Party</span></div>
+						</a>
+					</li>					
+				</ul>
+			</section>
+		</div>
+		<div class="sidebar">
+			<div class="container">
+				<div class="recent-posts float-left">
+					<h3>Recent Posts</h3>
+					<div class="media">
+						<div class="media-left float-left media-left1">	</div>
+						<div class="media-body float-left omega">
+							<h4 class="media-heading">
+								<a href="http://www.getreading.co.uk/whats-on/event/have-you-thought-about-childcare-for-the-may-holidays-or-just-a-fun-day-out-for-the-kids/" target="_blanc">
+									May Half Term Camps
+								</a>
+							</h4>
+							<small>May 8, 2016</small>
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left float-left media-left2">	</div>
+						<div class="media-body float-left omega">
+							<h4 class="media-heading">
+								<a href="http://www.getreading.co.uk/whats-on/event/easter-holiday-camp-for-kids-with-get-active-sports-4/" target="_blanc">
+									May Half Term Holiday Camp for kids with Get Active Sports 4+
+								</a>
+							</h4>
+							<small>May 8, 2016</small>
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left float-left media-left3">	</div>
+						<div class="media-body float-left omega">
+							<h4 class="media-heading">
+								<a href="http://www.getreading.co.uk/whats-on/family-kids-news/reading-childrens-festival-kicks-feast-11307352" target="_blanc">
+									Reading Children's Festival kicks off this May a feast of sport, stories, art and crafts
+								</a>
+							</h4>
+							<small>May 10, 2016</small>
+						</div>
+					</div>
+				</div>
+				<div class="email-form float-left">
+					<h3>Get The Scoop!</h3>
+					<p><small>Sign up to stay up-to-date on our latest studio happenings.</small></p>
+					<form action="">
+						<input type="text" placeholder="First Name" class="registration">
+						<input type="text" placeholder="Last Name" class="registration">
+						<input type="email" placeholder="Email Address" class="registration">
+						<input type="submit" value="SIGN UP" class="btn-style omega margin-top">
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<p><small>Kidz Arts and Crafts Studio © 2016 |</small></p>
+		</footer>
+		<script src="js/jquery.hoverdir.js"></script>
+		<script>
+			$(document).ready(function() {});
+			$(function() {
+				$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+			});
+		</script>
+	</body>
+	</html>
+
