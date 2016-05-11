@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Us</title>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<script src="js/jquery.js"></script>
+	<link href="maincss.css" rel="stylesheet">
+	<script>
+
+		function validate_form ( )
+		{				
+			$(".error").hide();
+			valid = true;
+
+			if ( document.contact_form.contact_name.value == "" )
+			{
+				$('[name="contact_name"]').parent().siblings().last().show();
+				valid = false;
+			}
+
+			if ( ( document.contact_form.gender[0].checked == false ) && ( document.contact_form.gender[1].checked == false ) )
+			{
+				$('[name="gender"]').parent().siblings().last().show();
+				valid = false;
+			}
+
+			if ( document.contact_form.age.selectedIndex == 0 )
+			{
+				$('[name="age"]').parent().siblings().last().show();
+				valid = false;
+			}
+
+			if ( document.contact_form.terms.checked == false )
+			{
+				$('[name="terms"]').parent().siblings().last().show();
+				valid = false;
+			}
+			if ( document.contact_form.textarea.value == "" )
+			{
+				$('[name="textarea"]').parent().siblings().last().show();
+				valid = false;
+			}
+			return valid;
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo-block">
+				<a href="index.html">
+					<h1>Kidz Arts & <br/><br/>
+						Crafts Studios</h1>
+					</a>
+				</div>
+				<div class="menu_block float-right">
+					<nav>
+						<ul class="menu">
+							<li class="not-current float-left"><a href="index.html">Home</a></li>
+							<li class="float-left not-current"><a href=".html">About Us</a></li>
+							<li class="float-left not-current"><a href=".html">Products</a></li>
+							<li class="float-left current"><a href="contactUs.html">Contact Us</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<div class="content">
+			<div class="container">
+				<div class="grid_12">
+					<h2>Find Us</h2>
+					<div class="map">
+						<figure class="">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48394.95968541861!2d-73.90551942288324!3d40.702935079332796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25e743b5f5de9%3A0x62f54981e38d97ad!2s79-05+Myrtle+Ave%2C+Queens%2C+NY+11385%2C+USA!5e0!3m2!1sen!2sua!4v1462903439651"></iframe>
+						</figure>
+						<div class="contact-info alpha">
+							<h2>Address:</h2>
+							<address>
+								<span class="fa fa-home"></span>
+								79-05 Myrtle Avenue <br>
+								Glendale <br>
+								NY 11385
+							</address>
+						</div>
+						<div class="contact-info beta">
+							<h2>Phone:</h2>
+							<div class="m_phone">
+								<div class="fa fa-phone"></div>
+								(718) 381-3334
+							</div>							
+						</div>
+						<div class="contact-info omega">
+							<h2>Email:</h2>
+							<a href="#"><span class="fa fa-envelope-o"></span> kidzartsandcrafts@gmail.com</a>
+						</div>	
+					</div>
+					<div class="bg">
+						<h2>Contact Form</h2>
+						<form action="" name="contact_form" method="post" onsubmit="return validate_form();">
+							<table>
+								<tr>
+									<td>Enter your name:</td>
+									<td>
+										<input type="text" name="contact_name" class="size">
+									</td>
+									<td class="error">*This field is required</td>
+								</tr>								
+								<tr>
+									<td>Select your gender:</td>
+									<td>
+										<input type="radio" name="gender" value="Male">Male
+										<input type="radio" name="gender" value="Female">Female
+									</td>
+									<td class="error">*This field is required</td>
+								</tr>
+								<tr>
+									<td>Choose your age:</td>
+									<td>
+
+										<select name="age" class="size">
+											<option value></option>
+											<optgroup label="less than 30 years">
+												<option value="0-18 years">0-18 years</option>
+												<option value="18-30 years">18-30 years</option>
+											</optgroup>
+											<optgroup label="between 30 and 60 years">
+												<option value="30-45 years">30-45 years</option>
+												<option value="45-60 years">45-60 years</option>
+											</optgroup>
+											<optgroup label="more than 60 years">
+												<option value="60-75 years">60-75 years</option>
+												<option value="75+ years">75+ years</option>
+											</optgroup>
+										</select>
+									</td>
+									<td class="error">*This field is required</td>
+								</tr>								
+								<tr>
+									<td colspan="2">
+										<input type="checkbox" name="terms" value="Yes">
+										I agree with the terms and conditions
+									</td>
+									<td class="error">*This field is required</td>								
+								</tr>
+								<tr>
+									<td>Leave your message:</td>
+									<td>
+										<textarea rows="10" name="textarea" class="size"></textarea>
+									</td>
+									<td class="error">*This field is required</td>
+								</tr>
+							</table>
+							<p>
+								<input type="submit" name="send" value="Submit" class="btn-style">
+								<input type="reset" value="Reset" class="btn-style omega">
+							</p>
+						</form>
+					</div>
+				</div>					
+			</div>
+		</div>
+		<div class="sidebar">
+			<div class="container">
+				<div class="recent-posts float-left">
+					<h3>Recent Posts</h3>
+					<div class="media">
+						<div class="media-left float-left media-left1">	</div>
+						<div class="media-body float-left omega">
+							<h4 class="media-heading">
+								<a href="http://www.getreading.co.uk/whats-on/event/have-you-thought-about-childcare-for-the-may-holidays-or-just-a-fun-day-out-for-the-kids/" target="_blanc">
+									May Half Term Camps
+								</a>
+							</h4>
+							<small>May 8, 2016</small>
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left float-left media-left2">	</div>
+						<div class="media-body float-left omega">
+							<h4 class="media-heading">
+								<a href="http://www.getreading.co.uk/whats-on/event/easter-holiday-camp-for-kids-with-get-active-sports-4/" target="_blanc">
+									May Half Term Holiday Camp for kids with Get Active Sports 4+
+								</a>
+							</h4>
+							<small>May 8, 2016</small>
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left float-left media-left3">	</div>
+						<div class="media-body float-left omega">
+							<h4 class="media-heading">
+								<a href="http://www.getreading.co.uk/whats-on/family-kids-news/reading-childrens-festival-kicks-feast-11307352" target="_blanc">
+									Reading Children's Festival kicks off this May a feast of sport, stories, art and crafts
+								</a>
+							</h4>
+							<small>May 10, 2016</small>
+						</div>
+					</div>
+				</div>
+				<div class="email-form float-left">
+					<h3>Get The Scoop!</h3>
+					<p><small>Sign up to stay up-to-date on our latest studio happenings.</small></p>
+					<form action="">
+						<input type="text" placeholder="First Name" class="registration">
+						<input type="text" placeholder="Last Name" class="registration">
+						<input type="email" placeholder="Email Address" class="registration">
+						<input type="submit" value="SIGN UP" class="btn-style omega margin-top">
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<p><small>Kidz Arts and Crafts Studio © 2016 |</small></p>
+		</footer>
+	</body>
+	</html>
