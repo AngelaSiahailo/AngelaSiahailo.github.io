@@ -6,54 +6,8 @@
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
 	<link href="style.css" rel="stylesheet">
-	<script>
-
-		function validate_form ( )
-		{				
-			$(".error").hide();
-			valid = true;
-
-			if ( document.contact_form.contact_name.value == "" )
-			{
-				$('[name="contact_name"]').parent().siblings().last().show();
-				valid = false;
-			}
-
-			if ( ( document.contact_form.gender[0].checked == false ) && ( document.contact_form.gender[1].checked == false ) )
-			{
-				$('[name="gender"]').parent().siblings().last().show();
-				valid = false;
-			}
-
-			if ( document.contact_form.age.selectedIndex == 0 )
-			{
-				$('[name="age"]').parent().siblings().last().show();
-				valid = false;
-			}
-
-			if ( document.contact_form.terms.checked == false )
-			{
-				$('[name="terms"]').parent().siblings().last().show();
-				valid = false;
-			}
-			if ( document.contact_form.textarea.value == "" )
-			{
-				$('[name="textarea"]').parent().siblings().last().show();
-				valid = false;
-			}
-			return valid;
-		}
-		function validate(){
-			var y=document.forms["form"]["email"].value;
-			at=y.indexOf("@");
-			dot=y.indexOf(".");
-			if (at<1 || dot<1){
-				alert("Invalid Email Address. Please use '@' and '.' symbols to write it correctly.")
-				return false;
-			}
-		}
-	</script>
 </head>
 <body>
 	<nav class="container">
