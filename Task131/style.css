@@ -157,9 +157,9 @@ h3{
 	border:1px solid #60BF93;
 	font-size:14px;
 }
+.padding{padding-left:15px}
 .email-form p{text-align:center;}
-.margin-top{margin-top:20px}
-input::-webkit-input-placeholder{padding-left:15px}		
+.margin-top{margin-top:20px}	
 .btn-style{
 	padding:10px 30px;
 	color:#ffffff;
@@ -182,6 +182,34 @@ footer p{
 	border-top:1px dotted;
 	margin:0;
 }	
+
+										/*FORM*/
+.error{
+	display:none;
+	font-weight:bold;
+}
+form{font-style:italic}
+.margin{
+	margin-left:20px;
+	margin-right:20px;
+	background-color:#E8E8E8;
+	padding:10px 0px 10px 20px;
+}
+.size{
+	width:370px;
+	border-radius:5px;
+	border:1px solid #60BF93;
+}
+
+									/*CONTACT PAGE*/
+.contactus-container{height:680px}
+.contactus-div{
+	width:440px;
+	height:300px;
+	margin:20px;
+}
+.contactus-img{background-image:url(images/contactus.jpg);}
+
 
 
 

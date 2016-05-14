@@ -5,7 +5,46 @@
 	<title>Kidz Art & Crafts Studio</title>
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<script src="js/jquery.js"></script>
 	<link href="style.css" rel="stylesheet">
+	<script>
+
+		function validate_form ( )
+		{				
+			$(".error").hide();
+			valid = true;
+
+			if ( document.contact_form.contact_name.value == "" )
+			{
+				$('[name="contact_name"]').parent().siblings().last().show();
+				valid = false;
+			}
+
+			if ( ( document.contact_form.gender[0].checked == false ) && ( document.contact_form.gender[1].checked == false ) )
+			{
+				$('[name="gender"]').parent().siblings().last().show();
+				valid = false;
+			}
+
+			if ( document.contact_form.age.selectedIndex == 0 )
+			{
+				$('[name="age"]').parent().siblings().last().show();
+				valid = false;
+			}
+
+			if ( document.contact_form.terms.checked == false )
+			{
+				$('[name="terms"]').parent().siblings().last().show();
+				valid = false;
+			}
+			if ( document.contact_form.textarea.value == "" )
+			{
+				$('[name="textarea"]').parent().siblings().last().show();
+				valid = false;
+			}
+			return valid;
+		}
+	</script>
 </head>
 <body>
 	<header>
@@ -22,9 +61,98 @@
 			<p class="logo2 letter-spacing p-style">Get Creative!</p>
 		</div>
 	</header>
-	<section>
-		
-	</section>
+
+	<div class="container contactus-container product-text">
+		<div class="contactus-div float-left">
+			<h3>Customer Servise</h3>
+			<ul>
+				<li>All Toys are made from safe, premium, and hypoallergenic plush fabrics</li>
+				<li>Each Budsie undergoes two quality control inspections prior to shipment</li>
+				<li>We’re with you every step of the way, with automatic updates throughout the Budsification process</li>
+			</ul>
+		</div>
+		<div class="contactus-img contactus-div float-left"></div>
+		<div class="contactus-div float-left">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.684795658745!2d-73.8726891852989!3d40.702939146107994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25e743b5f5de9%3A0x62f54981e38d97ad!2s79-05+Myrtle+Ave%2C+Queens%2C+NY+11385%2C+USA!5e0!3m2!1sen!2sua!4v1463224903931" width="440" height="280" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+		<div class="contactus-div float-left">
+			<h3>Direction</h3>
+			<ul>
+				<li>Jakie Robinson Parkway.</li>
+				<li>Exit 4, Forest Park Drive.</li>
+				<li>Turn towards Myrtle Ave/Woodhaven Blvd (right from East, left from Brooklyn).</li>
+				<li>Turn Left at light on to Myrtle Ave.</li>
+				<li>A Sprinkle of Fun is a block and half on your right hand side.</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="container margin-bottom">
+	<div class="margin">
+		<h2>Contact Form</h2>
+		<form action="" name="contact_form" method="post" onsubmit="return validate_form();">
+			<table>
+				<tr>
+					<td>Enter your name:</td>
+					<td>
+						<input type="text" name="contact_name" class="size padding">
+					</td>
+					<td class="error yellow">*This field is required</td>
+				</tr>								
+				<tr>
+					<td>Select your gender:</td>
+					<td>
+						<input type="radio" name="gender" value="Male">Male
+						<input type="radio" name="gender" value="Female">Female
+					</td>
+					<td class="error yellow">*This field is required</td>
+				</tr>
+				<tr>
+					<td>Choose your age:</td>
+					<td>
+
+						<select name="age" class="size padding">
+							<option value></option>
+							<optgroup label="less than 30 years">
+								<option value="0-18 years">0-18 years</option>
+								<option value="18-30 years">18-30 years</option>
+							</optgroup>
+							<optgroup label="between 30 and 60 years">
+								<option value="30-45 years">30-45 years</option>
+								<option value="45-60 years">45-60 years</option>
+							</optgroup>
+							<optgroup label="more than 60 years">
+								<option value="60-75 years">60-75 years</option>
+								<option value="75+ years">75+ years</option>
+							</optgroup>
+						</select>
+					</td>
+					<td class="error yellow">*This field is required</td>
+				</tr>								
+				<tr>
+					<td colspan="2">
+						<input type="checkbox" name="terms" value="Yes">
+						I agree with the terms and conditions
+					</td>
+					<td class="error yellow">*This field is required</td>								
+				</tr>
+				<tr>
+					<td>Leave your message:</td>
+					<td>
+						<textarea rows="10" name="textarea" class="size padding"></textarea>
+					</td>
+					<td class="error yellow">*This field is required</td>
+				</tr>
+			</table>
+			<p>
+				<input type="submit" name="send" value="Submit" class="btn-style letter-spacing">
+				<input type="reset" value="Reset" class="btn-style omega letter-spacing">
+			</p>
+		</form>
+		</div>
+	</div>
+
+
 	<div class="sidebar">
 		<div class="container">
 			<div class="recent-posts float-left">
@@ -32,7 +160,7 @@
 				<div class="media">
 					<div class="media-left float-left media-left1">	</div>
 					<div class="media-body float-left omega letter-spacing">
-						<a href="http://www.getreading.co.uk/whats-on/event/have-you-thought-about-childcare-for-the-may-holidays-or-just-a-fun-day-out-for-the-kids/" target="_blanc">
+						<a href="http://www.getreading.co.uk/whats-on/event/have-you-thought-about-childcare-for-the-may-holidays-or-just-a-fun-day-out-for-the-kids/" target="_blank">
 							<h4 class="media-heading">May Half Term Camps</h4>
 						</a>						
 						<small>May 8, 2016</small>
@@ -41,7 +169,7 @@
 				<div class="media">
 					<div class="media-left float-left media-left2">	</div>
 					<div class="media-body float-left omega letter-spacing">
-						<a href="http://www.getreading.co.uk/whats-on/event/easter-holiday-camp-for-kids-with-get-active-sports-4/" target="_blanc">
+						<a href="http://www.getreading.co.uk/whats-on/event/easter-holiday-camp-for-kids-with-get-active-sports-4/" target="_blank">
 							<h4 class="media-heading">May Half Term Holiday Camp for kids with Get Active Sports 4+</h4>
 						</a>
 						<small>May 8, 2016</small>
@@ -50,7 +178,7 @@
 				<div class="media">
 					<div class="media-left float-left media-left3">	</div>
 					<div class="media-body float-left omega letter-spacing">
-						<a href="http://www.getreading.co.uk/whats-on/family-kids-news/reading-childrens-festival-kicks-feast-11307352" target="_blanc">
+						<a href="http://www.getreading.co.uk/whats-on/family-kids-news/reading-childrens-festival-kicks-feast-11307352" target="_blank">
 							<h4 class="media-heading">Reading Children's Festival kicks off this May a feast of sport, stories, art and crafts</h4>
 						</a>
 						<small>May 10, 2016</small>
@@ -61,9 +189,9 @@
 				<h3>Get The Scoop!</h3>
 				<p><small>Sign up to stay up-to-date on our latest studio happenings.</small></p>
 				<form action="" method="post">
-					<input type="text" placeholder="First Name" class="registration">
-					<input type="text" placeholder="Last Name" class="registration">
-					<input type="email" placeholder="Email Address" class="registration">
+					<input type="text" placeholder="First Name" class="registration padding">
+					<input type="text" placeholder="Last Name" class="registration padding">
+					<input type="email" placeholder="Email Address" class="registration padding">
 					<input type="submit" value="SIGN UP" class="btn-style omega margin-top letter-spacing">
 				</form>
 			</div>
