@@ -196,13 +196,12 @@ form{font-style:italic}
 	padding:10px 0px 10px 20px;
 }
 .size{
-	width:100%;
-	border:none;
-}
-.width370{
 	width:370px;
-	
+	border-radius:5px;
+	border:1px solid #60BF93;
 }
+.padding{padding-left:15px}
+.padding-null{padding:1.5px 0;}
 
 									/*CONTACT PAGE*/
 .contactus-container{height:680px}
