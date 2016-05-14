@@ -199,6 +199,7 @@ form{font-style:italic}
 	width:370px;
 	border-radius:5px;
 	border:1px solid #60BF93;
+	box-sizing:border-box;
 }
 .padding{padding-left:15px}
 .padding-null{padding:1.5px 0;}
