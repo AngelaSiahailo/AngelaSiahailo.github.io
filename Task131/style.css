@@ -89,6 +89,7 @@ span{
 .align{
 	font-size:12px;
 	text-decoration:underline;
+	vertical-align:middle;
 }
 .align:hover{color:#60BF93}
 .align-right{
