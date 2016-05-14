@@ -6,122 +6,137 @@
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link href="style.css" rel="stylesheet">
+	<script>
+		function validate(){
+			var y=document.forms["form"]["email"].value;
+			at=y.indexOf("@");
+			dot=y.indexOf(".");
+			if (at<1 || dot<1){
+				alert("Invalid Email Address. Please use '@' and '.' symbols to write it correctly.")
+				return false;
+			}
+		}
+	</script>
 </head>
 <body>
-	<header>
-		<nav class="container">
-			<ul class="menu">
-				<li class="not-current float-left"><a href="index.html">Home</a></li>
-				<li class="float-left not-current"><a href="aboutUS.html">About Us</a></li>
-				<li class="float-left current"><a href="products.html">Products</a></li>
-				<li class="float-left not-current"><a href="contactUs.html">Contact Us</a></li>
-			</ul>
-		</nav>
-		<div class="container">
-			<p class="logo1 letter-spacing">KIDZ Arts & Crafts Studios</p>
-			<p class="logo2 letter-spacing p-style">Get Creative!</p>
-		</div>
-	</header>
-	<section class="container product-page">
-		<div class="product-img float-left product-img1"></div>
-		<div class="product-img float-left product-img2"></div>
-		<div class="product-img float-left product-img3"></div>
-		<div class="product-img float-left product-img4"></div>
-	</section>
-	<a id="prices"></a>
-	<section class="container">
-		<p class="logo2 letter-spacing p-style">Our Prices!</p>
-		<table class="table margin-bottom">
-			<tr class="bg-gray">
-				<td>№</td>
-				<td>Item</td>
-				<td>Author</td>
-				<td>Price</td>
-				<td>More information</td>
-			</tr>
-			<tr class="bg-green">
-				<td>1</td>
-				<td>Funny Green Monster</td>
-				<td>Made by <span class="yellow">Mary</span></td>
-				<td>49,99$</td>
-				<td><a href="product1.html" class="align">See more</a></td>
-			</tr>
-			<tr class="bg-gray">
-				<td>2</td>
-				<td>Super Brave Foxy</td>
-				<td>Made by <span class="yellow">John</span></td>
-				<td>49,99$</td>
-				<td><a href="product2.html" class="align">See more</a></td>
-			</tr>
-			<tr class="bg-green">
-				<td>3</td>
-				<td>Awesome Penguin Cutty</td>
-				<td>Made by <span class="yellow">Angela</span></td>
-				<td>49,99$</td>
-				<td><a href="product3.html" class="align">See more</a></td>
-			</tr>
-			<tr class="bg-gray">
-				<td>4</td>
-				<td>Mystery Mr T</td>
-				<td>Made by <span class="yellow">Monika</span></td>
-				<td>49,99$</td>
-				<td><a href="product4.html" class="align">See more</a></td>
-			</tr>
-			<tr class="bg-green">
-				<td>5</td>
-				<td>Happy Bat Toy</td>
-				<td>Made by <span class="yellow">Richy</span></td>
-				<td>49,99$</td>
-				<td><a href="product5.html" class="align">See more</a></td>
-			</tr>
-		</table>
-	</section>
-	<div class="sidebar">
-		<div class="container">
-			<div class="recent-posts float-left">
-				<h3>Recent Posts</h3>
-				<div class="media">
-					<div class="media-left float-left media-left1">	</div>
-					<div class="media-body float-left omega letter-spacing">
-						<a href="http://www.getreading.co.uk/whats-on/event/have-you-thought-about-childcare-for-the-may-holidays-or-just-a-fun-day-out-for-the-kids/" target="_blank">
-							<h4 class="media-heading">May Half Term Camps</h4>
-						</a>						
-						<small>May 8, 2016</small>
-					</div>
-				</div>
-				<div class="media">
-					<div class="media-left float-left media-left2">	</div>
-					<div class="media-body float-left omega letter-spacing">
-						<a href="http://www.getreading.co.uk/whats-on/event/easter-holiday-camp-for-kids-with-get-active-sports-4/" target="_blank">
-							<h4 class="media-heading">May Half Term Holiday Camp for kids with Get Active Sports 4+</h4>
-						</a>
-						<small>May 8, 2016</small>
-					</div>
-				</div>
-				<div class="media">
-					<div class="media-left float-left media-left3">	</div>
-					<div class="media-body float-left omega letter-spacing">
-						<a href="http://www.getreading.co.uk/whats-on/family-kids-news/reading-childrens-festival-kicks-feast-11307352" target="_blanc">
-							<h4 class="media-heading">Reading Children's Festival kicks off this May a feast of sport, stories, art and crafts</h4>
-						</a>
-						<small>May 10, 2016</small>
-					</div>
-				</div>
+	<nav class="container">
+		<ul class="menu">
+			<li class="not-current float-left"><a href="index.html">Home</a></li>
+			<li class="float-left not-current"><a href="aboutUS.html">About Us</a></li>
+			<li class="float-left current"><a href="products.html">Products</a></li>
+			<li class="float-left not-current"><a href="contactUs.html">Contact Us</a></li>
+		</ul>
+	</nav>
+	<div class="main">
+		<header>
+			<div class="container">
+				<p class="logo1 letter-spacing">KIDZ Arts & Crafts Studios</p>
+				<p class="logo2 letter-spacing p-style">Get Creative!</p>
 			</div>
-			<div class="email-form float-left">
-				<h3>Get The Scoop!</h3>
-				<p><small>Sign up to stay up-to-date on our latest studio happenings.</small></p>
-				<form action="" method="post">
-					<input type="text" placeholder="First Name" class="registration padding">
-					<input type="text" placeholder="Last Name" class="registration padding">
-					<input type="email" placeholder="Email Address" class="registration padding">
-					<input type="submit" value="SIGN UP" class="btn-style omega margin-top letter-spacing">
-				</form>
-			</div>
-		</div>
+		</header>
+		<section class="container product-page">
+			<div class="product-img float-left product-img1"></div>
+			<div class="product-img float-left product-img2"></div>
+			<div class="product-img float-left product-img3"></div>
+			<div class="product-img float-left product-img4"></div>
+		</section>
+		<a id="prices"></a>
+		<section class="container">
+			<p class="logo2 letter-spacing p-style">Our Prices!</p>
+			<table class="table margin-bottom">
+				<tr class="bg-gray">
+					<td>№</td>
+					<td>Item</td>
+					<td>Author</td>
+					<td>Price</td>
+					<td>More information</td>
+				</tr>
+				<tr class="bg-green">
+					<td>1</td>
+					<td>Funny Green Monster</td>
+					<td>Made by <span class="yellow">Mary</span></td>
+					<td>49,99$</td>
+					<td><a href="product1.html" class="align">See more</a></td>
+				</tr>
+				<tr class="bg-gray">
+					<td>2</td>
+					<td>Super Brave Foxy</td>
+					<td>Made by <span class="yellow">John</span></td>
+					<td>49,99$</td>
+					<td><a href="product2.html" class="align">See more</a></td>
+				</tr>
+				<tr class="bg-green">
+					<td>3</td>
+					<td>Awesome Penguin Cutty</td>
+					<td>Made by <span class="yellow">Angela</span></td>
+					<td>49,99$</td>
+					<td><a href="product3.html" class="align">See more</a></td>
+				</tr>
+				<tr class="bg-gray">
+					<td>4</td>
+					<td>Mystery Mr T</td>
+					<td>Made by <span class="yellow">Monika</span></td>
+					<td>49,99$</td>
+					<td><a href="product4.html" class="align">See more</a></td>
+				</tr>
+				<tr class="bg-green">
+					<td>5</td>
+					<td>Happy Bat Toy</td>
+					<td>Made by <span class="yellow">Richy</span></td>
+					<td>49,99$</td>
+					<td><a href="product5.html" class="align">See more</a></td>
+				</tr>
+			</table>
+		</section>
 	</div>
-	<footer>
-		<p><small>Kidz Arts and Crafts Studio © 2016 |</small></p>
-	</footer>
+	<div class="main-bottom main-bottom-products">
+		<div class="sidebar">
+			<div class="container">
+				<div class="recent-posts float-left">
+					<h3>Recent Posts</h3>
+					<div class="media">
+						<div class="media-left float-left media-left1">	</div>
+						<div class="media-body float-left omega letter-spacing">
+							<a href="http://www.getreading.co.uk/whats-on/event/have-you-thought-about-childcare-for-the-may-holidays-or-just-a-fun-day-out-for-the-kids/" target="_blank">
+								<h4 class="media-heading">May Half Term Camps</h4>
+							</a>						
+							<small>May 8, 2016</small>
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left float-left media-left2">	</div>
+						<div class="media-body float-left omega letter-spacing">
+							<a href="http://www.getreading.co.uk/whats-on/event/easter-holiday-camp-for-kids-with-get-active-sports-4/" target="_blank">
+								<h4 class="media-heading">May Half Term Holiday Camp for kids with Get Active Sports 4+</h4>
+							</a>
+							<small>May 8, 2016</small>
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left float-left media-left3">	</div>
+						<div class="media-body float-left omega letter-spacing">
+							<a href="http://www.getreading.co.uk/whats-on/family-kids-news/reading-childrens-festival-kicks-feast-11307352" target="_blank">
+								<h4 class="media-heading">Reading Children's Festival kicks off this May a feast of sport, stories, art and crafts</h4>
+							</a>
+							<small>May 10, 2016</small>
+						</div>
+					</div>
+				</div>
+				<div class="email-form float-left">
+					<h3>Get The Scoop!</h3>
+					<p><small>Sign up to stay up-to-date on our latest studio happenings.</small></p>
+					<form action="#" method="post" name="form" onsubmit="return validate()">
+						<input type="text" placeholder="First Name" class="registration padding">
+						<input type="text" placeholder="Last Name" class="registration padding">
+						<input type="text" name="email" placeholder="Email Address" class="registration padding">
+						<input type="submit" value="SIGN UP" class="btn-style omega margin-top letter-spacing">
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<p><small>Kidz Arts and Crafts Studio © 2016 |</small></p>
+		</footer>
+	</div>
 </body>
 </html>

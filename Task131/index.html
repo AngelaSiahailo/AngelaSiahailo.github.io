@@ -6,74 +6,89 @@
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link href="style.css" rel="stylesheet">
+	<script>
+		function validate(){
+			var y=document.forms["form"]["email"].value;
+			at=y.indexOf("@");
+			dot=y.indexOf(".");
+			if (at<1 || dot<1){
+				alert("Invalid Email Address. Please use '@' and '.' symbols to write it correctly.")
+				return false;
+			}
+		}
+	</script>
 </head>
 <body>
-	<header>
-		<nav class="container">
-			<ul class="menu">
-				<li class="current float-left"><a href="index.html">Home</a></li>
-				<li class="float-left not-current"><a href="aboutUS.html">About Us</a></li>
-				<li class="float-left not-current"><a href="products.html">Products</a></li>
-				<li class="float-left not-current"><a href="contactUs.html">Contact Us</a></li>
-			</ul>
-		</nav>
-		<div class="container">
-			<p class="logo1 letter-spacing">KIDZ Arts & Crafts Studios</p>
-			<p class="logo2 letter-spacing p-style">Get Creative!</p>
-		</div>
-	</header>
-	<section class="container margin-bottom">
-		<img src="images/Homepage.JPG" alt="Image's not available" class="homepage-img">
-		<p class="p-style content-text">
-			It’s a space for both children and adults, Kidz Arts & Crafts is a place to spend time with friends and family, while learning about artistic possibilities and expressing your creativity. Explore paint-your-own-pottery and more. Kidz offers open studio hours, parties, and all kinds of fun workshops.
-		</p>
-	</section>
-	<div class="sidebar">
-		<div class="container">
-			<div class="recent-posts float-left">
-				<h3>Recent Posts</h3>
-				<div class="media">
-					<div class="media-left float-left media-left1">	</div>
-					<div class="media-body float-left omega letter-spacing">
-						<a href="http://www.getreading.co.uk/whats-on/event/have-you-thought-about-childcare-for-the-may-holidays-or-just-a-fun-day-out-for-the-kids/" target="_blank">
-							<h4 class="media-heading">May Half Term Camps</h4>
-						</a>						
-						<small>May 8, 2016</small>
-					</div>
-				</div>
-				<div class="media">
-					<div class="media-left float-left media-left2">	</div>
-					<div class="media-body float-left omega letter-spacing">
-						<a href="http://www.getreading.co.uk/whats-on/event/easter-holiday-camp-for-kids-with-get-active-sports-4/" target="_blank">
-							<h4 class="media-heading">May Half Term Holiday Camp for kids with Get Active Sports 4+</h4>
-						</a>
-						<small>May 8, 2016</small>
-					</div>
-				</div>
-				<div class="media">
-					<div class="media-left float-left media-left3">	</div>
-					<div class="media-body float-left omega letter-spacing">
-						<a href="http://www.getreading.co.uk/whats-on/family-kids-news/reading-childrens-festival-kicks-feast-11307352" target="_blank">
-							<h4 class="media-heading">Reading Children's Festival kicks off this May a feast of sport, stories, art and crafts</h4>
-						</a>
-						<small>May 10, 2016</small>
-					</div>
-				</div>
+	<nav class="container">
+		<ul class="menu">
+			<li class="current float-left"><a href="index.html">Home</a></li>
+			<li class="float-left not-current"><a href="aboutUS.html">About Us</a></li>
+			<li class="float-left not-current"><a href="products.html">Products</a></li>
+			<li class="float-left not-current"><a href="contactUs.html">Contact Us</a></li>
+		</ul>
+	</nav>
+	<div class="main">
+		<header>
+			<div class="container">
+				<p class="logo1 letter-spacing">KIDZ Arts & Crafts Studios</p>
+				<p class="logo2 letter-spacing p-style">Get Creative!</p>
 			</div>
-			<div class="email-form float-left">
-				<h3>Get The Scoop!</h3>
-				<p><small>Sign up to stay up-to-date on our latest studio happenings.</small></p>
-				<form action="" method="post">
-					<input type="text" placeholder="First Name" class="registration padding">
-					<input type="text" placeholder="Last Name" class="registration padding">
-					<input type="email" placeholder="Email Address" class="registration padding">
-					<input type="submit" value="SIGN UP" class="btn-style omega margin-top letter-spacing">
-				</form>
-			</div>
-		</div>
+		</header>
+		<section class="container margin-bottom">
+			<img src="images/Homepage.JPG" alt="Image's not available" class="homepage-img">
+			<p class="p-style content-text">
+				It’s a space for both children and adults, Kidz Arts & Crafts is a place to spend time with friends and family, while learning about artistic possibilities and expressing your creativity. Explore paint-your-own-pottery and more. Kidz offers open studio hours, parties, and all kinds of fun workshops.
+			</p>
+		</section>
 	</div>
-	<footer>
-		<p><small>Kidz Arts and Crafts Studio © 2016 |</small></p>
-	</footer>
+	<div class="main-bottom main-bottom-homepage">
+		<div class="sidebar">
+			<div class="container">
+				<div class="recent-posts float-left">
+					<h3>Recent Posts</h3>
+					<div class="media">
+						<div class="media-left float-left media-left1">	</div>
+						<div class="media-body float-left omega letter-spacing">
+							<a href="http://www.getreading.co.uk/whats-on/event/have-you-thought-about-childcare-for-the-may-holidays-or-just-a-fun-day-out-for-the-kids/" target="_blank">
+								<h4 class="media-heading">May Half Term Camps</h4>
+							</a>						
+							<small>May 8, 2016</small>
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left float-left media-left2">	</div>
+						<div class="media-body float-left omega letter-spacing">
+							<a href="http://www.getreading.co.uk/whats-on/event/easter-holiday-camp-for-kids-with-get-active-sports-4/" target="_blank">
+								<h4 class="media-heading">May Half Term Holiday Camp for kids with Get Active Sports 4+</h4>
+							</a>
+							<small>May 8, 2016</small>
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left float-left media-left3">	</div>
+						<div class="media-body float-left omega letter-spacing">
+							<a href="http://www.getreading.co.uk/whats-on/family-kids-news/reading-childrens-festival-kicks-feast-11307352" target="_blank">
+								<h4 class="media-heading">Reading Children's Festival kicks off this May a feast of sport, stories, art and crafts</h4>
+							</a>
+							<small>May 10, 2016</small>
+						</div>
+					</div>
+				</div>
+				<div class="email-form float-left">
+					<h3>Get The Scoop!</h3>
+					<p><small>Sign up to stay up-to-date on our latest studio happenings.</small></p>
+					<form action="#" method="post" name="form" onsubmit="return validate()">
+						<input type="text" placeholder="First Name" class="registration padding">
+						<input type="text" placeholder="Last Name" class="registration padding">
+						<input type="text" name="email" placeholder="Email Address" class="registration padding">
+						<input type="submit" value="SIGN UP" class="btn-style omega margin-top letter-spacing">
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<p><small>Kidz Arts and Crafts Studio © 2016 |</small></p>
+		</footer>
+	</div>
 </body>
 </html>

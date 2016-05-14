@@ -3,27 +3,45 @@
     color: #838181;
     font: 14px/20px 'Raleway', sans-serif;
     margin:0;
+    position:relative;
 }
 .float-left{float:left}
 .letter-spacing{letter-spacing:1px}
 .omega{margin-left:15px}
 a, .hours{color:#4D4D4D}
+.main{
+	position:absolute;
+	top:61px;
+	width:960px;
+	margin:0 10%;
+}
+.main-bottom{
+	position:absolute;
+	width:100%;
+	background-image:url(images/bg-sidebar.png);
+}
+.main-bottom-contactus{top:1336px}
+.main-bottom-aboutus{top:1181px}
+.main-bottom-homepage{top:1006px}
+.main-bottom-product1{top:1043px}
+.main-bottom-products{top:1177px}
 
 									/*HEADER*/
 nav{
 	border-bottom:1px solid #c2c2c2;
 	box-shadow:0 5px 3px #f7f7f7;
-}
-.container{
-	width:960px;
-	margin:auto;
+	position:fixed;
+	z-index:999;
+	background-color:#fff;
+	width:100%;
 }
 
 									/*MENU*/
 .menu{
+	width:600px;
 	list-style:none;
 	height:40px;
-	margin:10px 200px;
+	margin:10px 26%;
 }
 a{text-decoration:none}
 .menu>li{
@@ -58,7 +76,7 @@ a{text-decoration:none}
 }
 .margin-bottom{margin-bottom:50px}
 .contactUs-img{margin-left:340px}
-span{
+span, h2{
 	color:#60BF93;
 	font-weight:bold;
 }
@@ -109,9 +127,9 @@ span{
 
 									/*SIDEBAR, NEWS*/
 .sidebar{
-	width:100%;
-	background-image:url(images/bg-sidebar.png);
 	height:350px;
+	width:960px;
+	margin:0 10%;
 }
 .recent-posts, .email-form{
 	width:450px;
@@ -190,8 +208,6 @@ footer p{
 }
 form{font-style:italic}
 .margin{
-	margin-left:20px;
-	margin-right:20px;
 	background-color:#E8E8E8;
 	padding:10px 0px 10px 20px;
 }
@@ -207,10 +223,17 @@ form{font-style:italic}
 									/*CONTACT PAGE*/
 .contactus-container{height:680px}
 .contactus-div{
-	width:440px;
+	width:460px;
 	height:300px;
-	margin:20px;
+	margin:20px 0;
 }
+iframe {
+	width:460px;
+	height:280px;
+	border:none;
+}
+.margin-left{margin-left:20px}
+.margin-right{margin-right:20px}
 .contactus-img{background-image:url(images/contactus.JPG);}
 
 
