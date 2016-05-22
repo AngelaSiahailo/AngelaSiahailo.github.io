@@ -5,26 +5,19 @@
     margin:0;
     position:relative;
 }
+.none{height:65px}
 .float-left{float:left}
 .letter-spacing{letter-spacing:1px}
 .omega{margin-left:15px}
 a, .hours{color:#4D4D4D}
 .main{
-	position:absolute;
-	top:61px;
 	width:960px;
-	margin:0 13%;
+	margin:auto;
 }
 .main-bottom{
-	position:absolute;
 	width:100%;
 	background-image:url(images/bg-sidebar.png);
 }
-.main-bottom-contactus{top:1336px}
-.main-bottom-aboutus{top:1181px}
-.main-bottom-homepage{top:1006px}
-.main-bottom-product1{top:1043px}
-.main-bottom-products{top:1177px}
 
 									/*HEADER*/
 nav{
@@ -41,7 +34,9 @@ nav{
 	width:600px;
 	list-style:none;
 	height:40px;
-	margin:10px 26%;
+	margin:auto;
+	margin-top:10px;
+	margin-bottom:10px;
 }
 a{text-decoration:none}
 .menu>li{
@@ -129,7 +124,7 @@ span, h2{
 .sidebar{
 	height:350px;
 	width:960px;
-	margin:0 13%;
+	margin:auto;
 }
 .recent-posts, .email-form{
 	width:450px;
